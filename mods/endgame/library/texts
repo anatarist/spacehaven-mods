@@ -1,0 +1,14 @@
+<t>
+  <findName id="451103004" pid="552">
+    <EN>Find Eden</EN>
+  </findName>
+  <findDesc id="451103005" pid="552">
+    <EN>Folks are saying there's a new home out there, somewhere, waiting for us. Let's see if we can't find it.</EN>
+  </findDesc>
+  <telescopeName id="451103007" pid="127">
+    <EN>Telescope</EN>
+  </telescopeName>
+  <telescopeDesc id="451103008" pid="127">
+    <EN>A high-resolution imaging system for accurate stellar positioning and mapping.</EN>
+  </telescopeDesc>
+</t>

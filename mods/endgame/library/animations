@@ -1,0 +1,94 @@
+<AllAnimations>
+    <animations>
+        <ba n="telescope1" f="30" ks="1" id="451103010">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="0" sx="-1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="4" y="16" sx="1" sy="1" r="0" a="239"/>
+            </items>
+        </ba>
+        <ba n="telescope1B" f="30" ks="1" id="451103013">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="0" sx="-1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="4" y="16" sx="1" sy="1" r="0" a="199"/>
+            </items>
+        </ba>
+        <ba n="telescopeHull1F" f="30" ks="1,20" id="451103009">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="0" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="0" y="0" sx="1" sy="1" r="0" l="0" sf="1" se="1" an="2hull-T3"/>
+                <assetPos vf="1:1" bi="0" x="32" y="0" sx="1" sy="1" r="0" a="239"/>
+            </items>
+        </ba>
+
+        <ba n="telescopeHull1B" f="30" ks="1" id="451103011">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="0" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                    <c>
+                        <b id="6">
+                            <pos>
+                                <p f="1" x="0" y="0" sx="1" sy="1" r="0" col="-1"/>
+                            </pos>
+                        </b>
+                        <b id="9">
+                            <pos>
+                                <p f="1" x="0" y="0" sx="1" sy="1" r="0" col="-1"/>
+                            </pos>
+                        </b>
+                    </c>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="6" x="-32" y="32" sx="-1" sy="1" r="0" a="199"/>
+                <assetPos vf="1:1" bi="9" x="0" y="20" sx="-1" sy="1" r="0" a="199"/>
+            </items>
+        </ba>
+
+        <ba n="machinePart12BHX" f="30" ks="1" id="451103014">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="-1" y="20" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="1" y="-20" sx="-1" sy="1" r="0" a="524"/>
+                <assetPos vf="1:1" bi="0" x="3" y="1" sx="-1" sy="1" r="0" a="109"/>
+            </items>
+        </ba>
+        <ba n="machinePart12FHX" f="30" ks="1" id="451103015">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="-1" y="16" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="1" y="-16" sx="-1" sy="1" r="0" a="524"/>
+                <assetPos vf="1:1" bi="0" x="-1" y="3" sx="-1" sy="1" r="0" a="130"/>
+            </items>
+        </ba>
+    </animations>
+</AllAnimations>

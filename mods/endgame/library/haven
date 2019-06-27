@@ -1,0 +1,191 @@
+<data>
+    <!--
+        New Elements
+    -->
+    <Element>
+        <!-- Telescope -->
+        <me _name="Telescope" alternateY="false" costGroup="0" ec="17" mid="451103006" nonSymmetrical="false" offsetRot="R0">
+            <data>
+                <!-- Telescope array elements -->
+                <l eid="2" gridOffX="1" gridOffY="1" layer="0" type="Object">
+                    <element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="false" state="Standby">
+                                <r0 aid="telescope1B" flx="false" />
+                                <r90 aid="telescope1B" flx="true" />
+                                <r180 aid="telescope1B" flx="false" />
+                                <r270 aid="telescope1B" flx="true" />
+                            </l>
+                        </definedStates>
+                    </element>
+                </l>
+
+                <l eid="2" gridOffX="2" gridOffY="1" layer="0" type="Object">
+                    <element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="false" state="Standby">
+                                <r0 aid="telescope1B" flx="false" />
+                                <r90 aid="telescope1B" flx="true" />
+                                <r180 aid="telescope1B" flx="false" />
+                                <r270 aid="telescope1B" flx="true" />
+                            </l>
+                        </definedStates>
+                    </element>
+                </l>
+
+                <l eid="2" gridOffX="3" gridOffY="1" layer="0" type="Object">
+                    <element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="false" state="Standby">
+                                <r0 aid="telescope1B" flx="false" />
+                                <r90 aid="telescope1B" flx="true" />
+                                <r180 aid="telescope1B" flx="false" />
+                                <r270 aid="telescope1B" flx="true" />
+                            </l>
+                        </definedStates>
+                    </element>
+                </l>
+
+                <!-- Exterior Hull -->
+                <l eid="2" gridOffX="0" gridOffY="1" layer="0" type="Hull">
+                    <element collapsible="true" id="0" lightValue="Wall" walkGridCost="255">
+                        <corners>
+                            <l capX="0" capY="0" type="D3" x="0" y="0">
+                                <bottom aid="2hull-B3" />
+                                <hullBottom aid="null" />
+                                <top aid="telescopeHull1F" />
+                                <hullTop aid="null" />
+                                <hat aid="null" />
+                            </l>
+                            <l capX="-5" capY="58" type="D9" x="-6" y="-3">
+                                <bottom aid="empty" />
+                                <hullBottom aid="null" />
+                                <top aid="telescopeHull1B" />
+                                <hullTop aid="null" />
+                                <hat aid="2hull-Cap" />
+                            </l>
+                        </corners>
+                        <airlock>
+                            <hatch inFront="true" playAlways="false" type="Hatch">
+                                <anims>
+                                    <l x="40" y="0">
+                                        <anim dir="D3" type="Single" useFlipped="true">
+                                            <animation aid="hatch1" />
+                                        </anim>
+                                    </l>
+                                    <l x="-40" y="20">
+                                        <anim dir="D7" type="Single" useFlipped="true">
+                                            <animation aid="empty" />
+                                        </anim>
+                                    </l>
+                                </anims>
+                            </hatch>
+                        </airlock>
+                    </element>
+                </l>
+
+                <!-- Terminal -->
+                <l eid="2" gridOffX="1" gridOffY="0" layer="0" type="Object">
+                    <element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="false" state="Standby">
+                                <r0 aid="machinePart12BH" flx="true" />
+                                <r90 aid="machinePart12FHX" flx="false" />
+                                <r180 aid="machinePart12FH" flx="true" />
+                                <r270 aid="machinePart12BHX" flx="false" />
+                            </l>
+                        </definedStates>
+                    </element>
+                </l>
+
+                <l eid="16" gridOffX="2" gridOffY="0" layer="0" type="FloorDeco">
+                    <element id="0" lightValue="None" walkGridCost="1">
+                        <deco crewReserved="0" info="Nothing">
+                            <animation aid="floorDeco1" />
+                        </deco>
+                    </element>
+                </l>
+            </data>
+            <linked>
+            </linked>
+            <events />
+            <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="true" disableBuildTest="false" disableRotation="false" viewMode="Normal">
+                <cu>
+                    <groups>
+                        <l buildTools="0" rep="871">
+                            <customPrice />
+                        </l>
+                        <l buildTools="30" rep="875">
+                            <customPrice>
+                                <l elementId="162" howMuch="3" />
+                                <l elementId="173" howMuch="1" />
+                            </customPrice>
+                        </l>
+                    </groups>
+                </cu>
+                <name tid="451103007" />
+                <desc tid="451103008" />
+                <guiIcon aid="build_icon_120" />
+                <subCat id="1519" />
+                <restrictions>
+                    <l gridX="-14" gridY="-1" sizeX="14" sizeY="5" type="Space" />
+                </restrictions>
+                <difficultyLevel level="1" skill="Construction" />
+            </objectInfo>
+        </me>
+    </Element>
+
+
+    <!--
+        Objectives are a bit tricky to tie into.
+
+        The three collections are tied to each of the starting scenarios via their `nid`s.
+        Only one collection will ever be started, and only at the beginning of the game.
+        While it's in progress it'll be stored in the savegame, and once it's complete it'll
+        be removed and become inaccessible.
+
+        So what we need to do is override the objectives for a given scenario (or both scenarios?)
+        and add our new ones in at the end. That way they'll start once the main tutorial finishes.
+    -->
+
+    <ObjectiveCollection>
+        <collection logEvents="true" nid="1028">
+            <objectives>
+                <l nid="451103002" objId="1" />
+            </objectives>
+        </collection>
+
+        <collection logEvents="true" nid="1745">
+            <objectives>
+                <l nid="451103002" objId="1" />
+            </objectives>
+        </collection>
+
+        <collection logEvents="true" nid="1746">
+            <objectives>
+                <l nid="451103002" objId="1" />
+            </objectives>
+        </collection>
+    </ObjectiveCollection>
+
+    <Notes>
+        <stuff id="451103002" idc="1">
+            <notes>
+                <l _name="Find Eden" color="Default" id="1" type="Objective">
+                    <objectives>
+                        <l building="451103006" type="Build" />
+                    </objectives>
+                    <infos>
+                        <l>
+                            <title tid="451103004" />
+                            <infoText tid="451103005" />
+                            <facility element="451103006" />
+                        </l>
+                    </infos>
+                    <title tid="451103004" />
+                    <desc tid="451103005" />
+                </l>
+            </notes>
+        </stuff>
+    </Notes>
+</data>
