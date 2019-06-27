@@ -1,0 +1,14 @@
+<t>
+    <plantName id="45110000" pid="145">
+        <EN>Artificial Plant</EN>
+    </plantName>
+    <plantDesc id="45110001" pid="145">
+        <EN>Add a bit of cheer to your living spaces.</EN>
+    </plantDesc>
+    <holoName id="45110004" pid="145">
+        <EN>Hologram</EN>
+    </holoName>
+    <holoDesc id="45110005" pid="145">
+        <EN>An emblem of your ship and its crew.</EN>
+    </holoDesc>
+</t>

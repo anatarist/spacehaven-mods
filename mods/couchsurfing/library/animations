@@ -1,5 +1,6 @@
 <AllAnimations>
     <animations>
+        <!-- Flipped couch -->
         <ba n="build_icon_1235F" f="30" ks="1" id="451104001">
             <bones>
                 <b id="0">
@@ -12,5 +13,97 @@
                 <assetPos vf="1:1" bi="0" x="0" y="0" sx="1" sy="1" r="0" a="1706"/>
             </items>
         </ba>
+
+        <!-- Artificial plant -->
+        <ba n="decorativePlant" f="30" ks="1" id="45110003">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="13" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="0" y="0" sx="1" sy="1" r="0" a="524"/>
+                <assetPos vf="1:1" bi="0" x="0" y="0" sx="1" sy="1" r="0" a="217"/>
+                <assetPos vf="1:1" bi="0" x="0" y="18" sx="1" sy="1" r="0" a="523"/>
+            </items>
+        </ba>
+        <ba n="build_icon_plant" f="30" ks="1" id="45110004">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="0" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="0" y="-18" sx="1" sy="1" r="0" a="217"/>
+                <assetPos vf="1:1" bi="0" x="0" y="0" sx="1" sy="1" r="0" a="523"/>
+            </items>
+        </ba>
+
+        <!-- Hologram -->
+        <ba n="hologramBase" f="4" ks="1" id="45110006">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="0" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="0" y="1" sx="1" sy="1" r="0" a="750"/>
+                <assetPos vf="1:1" bi="0" x="0" y="9" sx="1" sy="1" r="0" a="608"/>
+            </items>
+        </ba>
+        <ba n="hologramFloat" f="30" ks="1,5,15,25,30,35,45,55,60" id="45110007">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="0" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <!--
+                    Sinusoidal bobbing => 2sin(2pix / 60)
+
+                    y   time
+                    0   0
+                    1   5
+                    2   15
+                    1   25
+                    0   30
+                    -1  35
+                    -2  45
+                    -1  55
+                    0   60
+                -->
+                <assetPos vf="1:1,5:0"       bi="0" x="0" y="40" sx="1" sy="1" r="0" a="2092"/>
+                <assetPos vf="1:0,5:1,15:0"  bi="0" x="0" y="41" sx="1" sy="1" r="0" a="2092"/>
+                <assetPos vf="1:0,15:1,25:0" bi="0" x="0" y="42" sx="1" sy="1" r="0" a="2092"/>
+                <assetPos vf="1:0,25:1,30:0" bi="0" x="0" y="41" sx="1" sy="1" r="0" a="2092"/>
+                <assetPos vf="1:0,30:1,35:0" bi="0" x="0" y="40" sx="1" sy="1" r="0" a="2092"/>
+                <assetPos vf="1:0,35:1,45:0" bi="0" x="0" y="39" sx="1" sy="1" r="0" a="2092"/>
+                <assetPos vf="1:0,45:1,55:0" bi="0" x="0" y="38" sx="1" sy="1" r="0" a="2092"/>
+                <assetPos vf="1:0,55:1,60:0" bi="0" x="0" y="39" sx="1" sy="1" r="0" a="2092"/>
+                <assetPos vf="1:0,60:1"      bi="0" x="0" y="40" sx="1" sy="1" r="0" a="2092"/>
+            </items>
+        </ba>
+        <ba n="hologram" f="30" ks="1,5,15,25,30,35,45,55,60" id="45110008">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="0" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="0" y="0" sx="1" sy="1" r="0" an="hologramBase"/>
+                <assetPos vf="1:1" bi="0" x="0" y="0" sx="1" sy="1" r="0" an="hologramFloat"/>
+            </items>
+        </ba>
+
     </animations>
 </AllAnimations>

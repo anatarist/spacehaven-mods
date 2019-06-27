@@ -1,5 +1,14 @@
 <data>
     <Element>
+
+        <!--
+
+            COUCHES & CHAIRS
+
+            Adjusts walkability and placement rules for couches and chairs and adds a few new
+            couch variants.
+
+        -->
         <!-- X1 Chair: adjust walkGridCost to 100 -->
         <me _name="X1 Chair" alternateY="false" costGroup="869" ec="3" mid="90" nonSymmetrical="false" offsetRot="R0">
             <data>
@@ -177,5 +186,99 @@
             <linked />
             <events />
         </me>
+
+        <!--
+
+            DECORATIVE ITEMS
+
+            Adds a few new decorative/comfort items.
+
+        -->
+
+        <!-- Artificial Plant -->
+        <me _name="Artificial Plant" alternateY="false" costGroup="950" ec="1" mid="45110002" nonSymmetrical="false" offsetRot="R0">
+            <data>
+                <l eid="2" gridOffX="0" gridOffY="0" layer="0" type="Object">
+                    <element id="0" lightValue="Low" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="false" state="Standby">
+                                <r0 aid="decorativePlant" flx="false" />
+                                <r90 aid="null" flx="false" />
+                                <r180 aid="decorativePlant" flx="false" />
+                                <r270 aid="null" flx="false" />
+                            </l>
+                        </definedStates>
+                        <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+                            <noiseAndComfort onlyWhenInuse="false" reduceNegative="true">
+                                <radiusBeauty radius="4" roomDrop="20" value="12" />
+                            </noiseAndComfort>
+                        </features>
+                    </element>
+                </l>
+            </data>
+            <linked>
+            </linked>
+            <events />
+            <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="Normal">
+                <name tid="45110000" />
+                <desc tid="45110001" />
+                <guiIcon aid="build_icon_plant" />
+                <subCat id="1506" />
+                <restrictions>
+                </restrictions>
+                <difficultyLevel level="1" skill="Construction" />
+            </objectInfo>
+        </me>
+
+        <!-- Faction Hologram -->
+        <me _name="Hologram" alternateY="false" costGroup="950" ec="1" mid="45110003" nonSymmetrical="false" offsetRot="R0">
+            <data>
+                <l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+                    <element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="true" state="InUse">
+                                <r0 aid="hologram" flx="false" />
+                                <r90 aid="null" flx="false" />
+                                <r180 aid="hologram" flx="false" />
+                                <r270 aid="null" flx="false" />
+                                <wallMountLight color="084720fe" powerUsage="10" skipCenter="false">
+                                    <offset x="0" y="-1" />
+                                    <flood brightness="400" distance="12" />
+                                </wallMountLight>
+                            </l>
+                            <l playAnimation="false" state="NoPowerOrError">
+                                <r0 aid="hologramBase" flx="false" />
+                                <r90 aid="null" flx="false" />
+                                <r180 aid="hologramBase" flx="false" />
+                                <r270 aid="null" flx="false" />
+                                <wallMountLight color="9a1212fe" powerUsage="0.0" skipCenter="false">
+                                    <offset x="0" y="-1" />
+                                    <flood brightness="300" distance="5" />
+                                </wallMountLight>
+                            </l>
+                        </definedStates>
+                        <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+                            <stateWatchdog autoproduce="false" />
+                            <noiseAndComfort onlyWhenInuse="true" reduceNegative="true">
+                                <radiusBeauty radius="10" roomDrop="20" value="30" />
+                            </noiseAndComfort>
+                        </features>
+                    </element>
+                </l>
+            </data>
+            <linked>
+            </linked>
+            <events />
+            <objectInfo buildInstant="true" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="Normal">
+                <name tid="45110004" />
+                <desc tid="45110005" />
+                <guiIcon aid="build_icon_plant" />
+                <subCat id="1506" />
+                <restrictions>
+                </restrictions>
+                <difficultyLevel level="1" skill="Construction" />
+            </objectInfo>
+        </me>
+
     </Element>
 </data>

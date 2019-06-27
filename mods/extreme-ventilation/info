@@ -1,0 +1,5 @@
+<mod>
+  <name>Extreme Ventilation</name>
+  <description>Adds an exterior air vent that wall-mounts on side of your ship. Useful for emergency venting and to maintain hard vacuums in e.g. industrial areas. Available under ship > airlock.</description>
+  <minimumLoaderVersion>0.0.1</minimumLoaderVersion>
+</mod>
