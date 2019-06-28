@@ -1,5 +1,8 @@
 <mod>
-  <name>Endgame</name>
-  <description>A collection of endgame missions and buildings.</description>
-  <minimumLoaderVersion>0.0.2</minimumLoaderVersion>
+    <name>Endgame</name>
+    <description>A collection of endgame missions and buildings.</description>
+    <minimumLoaderVersion>0.0.2</minimumLoaderVersion>
+    <gameVersions>
+        <v>0.4.1</v>
+    </gameVersions>
 </mod>
