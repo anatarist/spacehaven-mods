@@ -210,7 +210,7 @@
                         </definedStates>
                         <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
                             <noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
-                                <radiusBeauty radius="4" roomDrop="20" value="12" />
+                                <radiusBeauty radius="10" roomDrop="20" value="12" />
                             </noiseAndComfort>
                         </features>
                     </element>
