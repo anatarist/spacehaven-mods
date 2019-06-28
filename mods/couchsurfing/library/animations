@@ -104,6 +104,17 @@
                 <assetPos vf="1:1" bi="0" x="0" y="0" sx="1" sy="1" r="0" an="hologramFloat"/>
             </items>
         </ba>
-
+        <ba n="hologramIcon" f="30" ks="1" id="45110009">
+            <bones>
+                <b id="0">
+                    <pos>
+                        <p f="1" x="0" y="0" sx="1" sy="1" r="0" col="-1"/>
+                    </pos>
+                </b>
+            </bones>
+            <items>
+                <assetPos vf="1:1" bi="0" x="0" y="-34" sx="1" sy="1" r="0" an="hologram"/>
+            </items>
+        </ba>
     </animations>
 </AllAnimations>

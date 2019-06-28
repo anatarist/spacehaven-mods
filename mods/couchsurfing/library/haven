@@ -209,7 +209,7 @@
                             </l>
                         </definedStates>
                         <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
-                            <noiseAndComfort onlyWhenInuse="false" reduceNegative="true">
+                            <noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
                                 <radiusBeauty radius="4" roomDrop="20" value="12" />
                             </noiseAndComfort>
                         </features>
@@ -238,19 +238,19 @@
                         <definedStates>
                             <l playAnimation="true" state="InUse">
                                 <r0 aid="hologram" flx="false" />
-                                <r90 aid="null" flx="false" />
+                                <r90 aid="hologram" flx="false" />
                                 <r180 aid="hologram" flx="false" />
-                                <r270 aid="null" flx="false" />
-                                <wallMountLight color="084720fe" powerUsage="10" skipCenter="false">
+                                <r270 aid="hologram" flx="false" />
+                                <wallMountLight color="084720fe" powerUsage="12" skipCenter="false">
                                     <offset x="0" y="-1" />
                                     <flood brightness="400" distance="12" />
                                 </wallMountLight>
                             </l>
                             <l playAnimation="false" state="NoPowerOrError">
                                 <r0 aid="hologramBase" flx="false" />
-                                <r90 aid="null" flx="false" />
+                                <r90 aid="hologramBase" flx="false" />
                                 <r180 aid="hologramBase" flx="false" />
-                                <r270 aid="null" flx="false" />
+                                <r270 aid="hologramBase" flx="false" />
                                 <wallMountLight color="9a1212fe" powerUsage="0.0" skipCenter="false">
                                     <offset x="0" y="-1" />
                                     <flood brightness="300" distance="5" />
@@ -258,9 +258,9 @@
                             </l>
                         </definedStates>
                         <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
-                            <stateWatchdog autoproduce="false" />
+                            <stateWatchdog autoproduce="true" />
                             <noiseAndComfort onlyWhenInuse="true" reduceNegative="true">
-                                <radiusBeauty radius="10" roomDrop="20" value="30" />
+                                <radiusBeauty radius="10" roomDrop="20" value="50" />
                             </noiseAndComfort>
                         </features>
                     </element>
@@ -269,12 +269,27 @@
             <linked>
             </linked>
             <events />
-            <objectInfo buildInstant="true" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="Normal">
+            <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="Normal">
                 <name tid="45110004" />
                 <desc tid="45110005" />
-                <guiIcon aid="build_icon_plant" />
+                <guiIcon aid="hologramIcon" />
                 <subCat id="1506" />
+                <cu>
+                    <groups>
+                        <l buildTools="50" rep="950">
+                            <customPrice>
+                                <l _elementName="Energy rod" elementId="174" howMuch="4" />
+                                <l _elementName="Electronics" elementId="173" howMuch="4" />
+                                <l _elementName="Advanced Block" elementId="930" howMuch="2" />
+                            </customPrice>
+                        </l>
+                    </groups>
+                </cu>
                 <restrictions>
+                    <l gridX="0" gridY="1" sizeX="1" sizeY="1" type="Floor" />
+                    <l gridX="0" gridY="-1" sizeX="1" sizeY="1" type="Floor" />
+                    <l gridX="1" gridY="0" sizeX="1" sizeY="1" type="Floor" />
+                    <l gridX="-1" gridY="0" sizeX="1" sizeY="1" type="Floor" />
                 </restrictions>
                 <difficultyLevel level="1" skill="Construction" />
             </objectInfo>
