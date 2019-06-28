@@ -209,8 +209,8 @@
                             </l>
                         </definedStates>
                         <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
-                            <noiseAndComfort onlyWhenInuse="false" reduceNegative="false">
-                                <radiusBeauty radius="10" roomDrop="20" value="12" />
+                            <noiseAndComfort onlyWhenInuse="false" reduceNegative="true">
+                                <radiusBeauty radius="7" roomDrop="20" value="12" />
                             </noiseAndComfort>
                         </features>
                     </element>
@@ -259,7 +259,7 @@
                         </definedStates>
                         <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
                             <stateWatchdog autoproduce="true" />
-                            <noiseAndComfort onlyWhenInuse="true" reduceNegative="true">
+                            <noiseAndComfort onlyWhenInuse="true" reduceNegative="false">
                                 <radiusBeauty radius="10" roomDrop="20" value="50" />
                             </noiseAndComfort>
                         </features>

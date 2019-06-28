@@ -120,12 +120,12 @@
         <desc tid="424" />
     </product>
 
-    <!-- Artificial Meat: Needs 50C - 95C, releases hazard gas when harvested -->
+    <!-- Artificial Meat: Needs 50C - 95C, needs more CO2 releases hazard gas when harvested -->
     <product _name="Artificial meat" eid="705" type="Crop">
         <name tid="423" />
         <GUIAnimation aid="spaceFoodIcon1" />
         <stages>
-            <l co2PerMinute="3" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="1" time="1300">
+            <l co2PerMinute="12" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="1" time="1300">
                 <needs>
                     <l consumeEvery="2" element="16" howMuch="1" />
                 </needs>
@@ -135,7 +135,7 @@
                     </l>
                 </anims>
             </l>
-            <l co2PerMinute="3" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="2" time="1300">
+            <l co2PerMinute="12" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="2" time="1300">
                 <tend penalty="-50" />
                 <anims>
                     <l dir="D1" type="Single" useFlipped="true">
@@ -143,7 +143,7 @@
                     </l>
                 </anims>
             </l>
-            <l co2PerMinute="3" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="3" time="1300">
+            <l co2PerMinute="12" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="3" time="1300">
                 <needs>
                     <l consumeEvery="2" element="16" howMuch="1" />
                 </needs>
@@ -153,7 +153,7 @@
                     </l>
                 </anims>
             </l>
-            <l co2PerMinute="3" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="4" time="1300">
+            <l co2PerMinute="12" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="4" time="1300">
                 <tend penalty="-50" />
                 <anims>
                     <l dir="D1" type="Single" useFlipped="true">
@@ -161,7 +161,7 @@
                     </l>
                 </anims>
             </l>
-            <l co2PerMinute="3" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="5" time="1">
+            <l co2PerMinute="12" lightNeeded="Medium" maxTemp="368" minTemp="323" oxygenPerMinute="0" stage="5" time="1">
                 <harvestable>
                     <products>
                         <l element="707" howMuch="1" produceEvery="1" />
