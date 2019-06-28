@@ -260,7 +260,7 @@
                         <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
                             <stateWatchdog autoproduce="true" />
                             <noiseAndComfort onlyWhenInuse="true" reduceNegative="false">
-                                <radiusBeauty radius="10" roomDrop="20" value="50" />
+                                <radiusBeauty radius="10" roomDrop="20" value="10" />
                             </noiseAndComfort>
                         </features>
                     </element>
@@ -287,9 +287,6 @@
                 </cu>
                 <restrictions>
                     <l gridX="0" gridY="1" sizeX="1" sizeY="1" type="Floor" />
-                    <l gridX="0" gridY="-1" sizeX="1" sizeY="1" type="Floor" />
-                    <l gridX="1" gridY="0" sizeX="1" sizeY="1" type="Floor" />
-                    <l gridX="-1" gridY="0" sizeX="1" sizeY="1" type="Floor" />
                 </restrictions>
                 <difficultyLevel level="1" skill="Construction" />
             </objectInfo>

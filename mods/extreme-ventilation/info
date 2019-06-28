@@ -1,5 +1,13 @@
 <mod>
   <name>Extreme Ventilation</name>
-  <description>Adds an exterior air vent that wall-mounts on side of your ship. Useful for emergency venting and to maintain hard vacuums in e.g. industrial areas. Available under ship > airlock.</description>
+  <description>Expands on the game's gas simulation system.
+
+New Ventilation Components:
+- An exterior air vent that wall-mounts on side of your ship. Useful for emergency venting and to maintain hard vacuums in e.g. industrial areas. Available under ship > airlock.
+
+New Gas Generators:
+- A smoke generator that burns Carbon and produces large amounts of smoke.
+- A hazard gas generator that burns Hyperium. Use it to test your emergency preparadness, or maybe repel boarders?
+  </description>
   <minimumLoaderVersion>0.0.1</minimumLoaderVersion>
 </mod>
