@@ -40,6 +40,6 @@ New Ventilation Components:
 
 New Gas Generators:
 - A smoke generator that burns Carbon and produces large amounts of smoke.
-- A hazard gas generator that burns Hyperium. Use it to test your emergency preparadness, or maybe repel boarders?
+- A hazard gas generator that burns Hyperium. Use it to test your emergency preparedness, or maybe repel boarders?
 
 
