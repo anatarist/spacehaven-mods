@@ -17,7 +17,7 @@ readme.write(textwrap.dedent("""\
 
     It is **not associated with Bugbyte or Space Haven in any way** other than that it adds some mods to the game. These are intended to be a sneak peek at what modding might be able to do, and in the future will be updated to use official mod support.
 
-    All of the mods are downloadable from [the releases page](https://github.com/anatarist/spacehaven-mods/releases) and require [the unofficial mod loader](https://github.com/anatarist/spacehaven-modloader) to use.
+    All of these mods require [the unofficial mod loader](https://github.com/anatarist/spacehaven-modloader) to use.
 
 
 """))
@@ -33,10 +33,14 @@ for mod in os.listdir('mods'):
 
         {description}
 
+        #### [Download {mod}-{version}.zip](https://github.com/anatarist/spacehaven-mods/releases/download/v{version}/{mod}-{version}.zip)
+
 
     """).format(
         name=info.find("name").text.strip(),
-        description=info.find("description").text.strip()
+        description=info.find("description").text.strip(),
+        mod=mod,
+        version=VERSION
     ))
 
     os.system("cd mods && zip -r {mod}-{version}.zip {mod}".format(mod=mod, version=VERSION))

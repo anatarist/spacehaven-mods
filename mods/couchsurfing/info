@@ -12,6 +12,8 @@ New decorative items:
 Movement and placement tweaks:
 - Characters can now squeeze past couches and chairs, although with a movement penalty, so you can place them in more crowded spaces.
 - Couches no longer require free space on each end so you can make Us and other shapes.
+
+NOTE: This mod is a drop-in replacement for the "Artificial Plant" example mod included with the mod loader.
     </description>
     <minimumLoaderVersion>0.0.1</minimumLoaderVersion>
     <gameVersions>

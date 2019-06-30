@@ -8,6 +8,8 @@ New Ventilation Components:
 New Gas Generators:
 - A smoke generator that burns Carbon and produces large amounts of smoke.
 - A hazard gas generator that burns Hyperium. Use it to test your emergency preparedness, or maybe repel boarders?
+
+NOTE: This mod is a drop-in replacement for the "Exterior Air Vent" example mod included with the mod loader.
     </description>
     <minimumLoaderVersion>0.0.1</minimumLoaderVersion>
     <gameVersions>
