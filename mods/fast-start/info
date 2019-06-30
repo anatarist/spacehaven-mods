@@ -1,8 +1,10 @@
 <mod>
     <name>Fast Start</name>
-    <description>Doubles the starting crew and resources in the second start scenario.</description>
+    <description>Doubles the crew and resources in the second start scenario.</description>
     <minimumLoaderVersion>0.0.2</minimumLoaderVersion>
     <gameVersions>
         <v>0.4.1</v>
     </gameVersions>
+
+    <wip />
 </mod>
