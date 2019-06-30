@@ -22,7 +22,7 @@ Movement and placement tweaks:
 - Characters can now squeeze past couches and chairs, although with a movement penalty, so you can place them in more crowded spaces.
 - Couches no longer require free space on each end so you can make Us and other shapes.
 
-NOTE: This mod is a drop-in replacement for the "Artificial Plant" example mod included with the mod loader.
+Note: This mod is a drop-in replacement for the "Artificial Plant" example mod included with the mod loader.
 
 #### [Download couchsurfing-0.0.1.zip](https://github.com/anatarist/spacehaven-mods/releases/download/v0.0.1/couchsurfing-0.0.1.zip)
 
@@ -36,7 +36,7 @@ Crop Growth Rebalance:
 - Fruits now require a higher light level and a temperature range of 25C - 40C, which means you can't grow them next to root vegetables.
 - Artificial meat now requires a temperature of 50C - 95C, 4x more CO2, and produces hazard gas when harvested. You'll need an area that's isolated from the rest of the ship to grow it.
 
-NOTE: This mod is a drop-in replacement for the "Greenhouse" example mod included with the mod loader.
+Note: This mod is a drop-in replacement for the "Greenhouse" example mod included with the mod loader.
 
 #### [Download greenhouse-0.0.1.zip](https://github.com/anatarist/spacehaven-mods/releases/download/v0.0.1/greenhouse-0.0.1.zip)
 
@@ -52,7 +52,7 @@ New Gas Generators:
 - A smoke generator that burns Carbon and produces large amounts of smoke.
 - A hazard gas generator that burns Hyperium. Use it to test your emergency preparedness, or maybe repel boarders?
 
-NOTE: This mod is a drop-in replacement for the "Exterior Air Vent" example mod included with the mod loader.
+Note: This mod is a drop-in replacement for the "Exterior Air Vent" example mod included with the mod loader.
 
 #### [Download extreme-ventilation-0.0.1.zip](https://github.com/anatarist/spacehaven-mods/releases/download/v0.0.1/extreme-ventilation-0.0.1.zip)
 
