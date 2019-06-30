@@ -22,7 +22,9 @@ readme.write(textwrap.dedent("""\
 
 """))
 
-for mod in os.listdir('mods'):
+mods = os.listdir('mods')
+mods.sort()
+for mod in mods:
     info = ElementTree.parse(os.path.join('mods', mod, 'info')).getroot()
 
     if info.find('wip') is not None:

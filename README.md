@@ -27,20 +27,6 @@ Note: This mod is a drop-in replacement for the "Artificial Plant" example mod i
 #### [Download couchsurfing-0.0.1.zip](https://github.com/anatarist/spacehaven-mods/releases/download/v0.0.1/couchsurfing-0.0.1.zip)
 
 
-## Greenhouse
-
-A rebalance of crop growth to take advantage of the game's temperature and gas systems.
-
-Crop Growth Rebalance:
-- Root vegetables now require a temperature range of 0C - 20C.
-- Fruits now require a higher light level and a temperature range of 25C - 40C, which means you can't grow them next to root vegetables.
-- Artificial meat now requires a temperature of 50C - 95C, 4x more CO2, and produces hazard gas when harvested. You'll need an area that's isolated from the rest of the ship to grow it.
-
-Note: This mod is a drop-in replacement for the "Greenhouse" example mod included with the mod loader.
-
-#### [Download greenhouse-0.0.1.zip](https://github.com/anatarist/spacehaven-mods/releases/download/v0.0.1/greenhouse-0.0.1.zip)
-
-
 ## Extreme Ventilation
 
 Expands on the game's gas simulation system.
@@ -55,5 +41,19 @@ New Gas Generators:
 Note: This mod is a drop-in replacement for the "Exterior Air Vent" example mod included with the mod loader.
 
 #### [Download extreme-ventilation-0.0.1.zip](https://github.com/anatarist/spacehaven-mods/releases/download/v0.0.1/extreme-ventilation-0.0.1.zip)
+
+
+## Greenhouse
+
+A rebalance of crop growth to take advantage of the game's temperature and gas systems.
+
+Crop Growth Rebalance:
+- Root vegetables now require a temperature range of 0C - 20C.
+- Fruits now require a higher light level and a temperature range of 25C - 40C, which means you can't grow them next to root vegetables.
+- Artificial meat now requires a temperature of 50C - 95C, 4x more CO2, and produces hazard gas when harvested. You'll need an area that's isolated from the rest of the ship to grow it.
+
+Note: This mod is a drop-in replacement for the "Greenhouse" example mod included with the mod loader.
+
+#### [Download greenhouse-0.0.1.zip](https://github.com/anatarist/spacehaven-mods/releases/download/v0.0.1/greenhouse-0.0.1.zip)
 
 
