@@ -5,4 +5,16 @@
   <exteriorVentDesc id="45110103" pid="145">
     <EN>This exterior air vent allows quick atmosphere venting in case of emergency or to maintain hard vacuums (e.g. in industrial areas).</EN>
   </exteriorVentDesc>
+  <text id="451101002" pid="145">
+    <EN>Hazard Gas Generator</EN>
+  </text>
+  <text id="451101003" pid="145">
+    <EN>Burns hyperium to produce hazard gas. Use it to test your emergency preparedness, or maybe repel boarders?</EN>
+  </text>
+  <text id="451101005" pid="145">
+    <EN>Smoke Generator</EN>
+  </text>
+  <text id="451101006" pid="145">
+    <EN>Burns carbon to produce large amounts of smoke.</EN>
+  </text>
 </t>

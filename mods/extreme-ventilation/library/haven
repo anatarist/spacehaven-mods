@@ -1,63 +1,226 @@
 <data>
-  <Element>
-    <me _name="Exterior Air Vent" alternateY="false" costGroup="950" ec="1" mid="45110101" nonSymmetrical="false" offsetRot="R0">
-      <data>
-        <l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
-          <element id="0" lightValue="None" renderOnFloor="false" userTogglable="false" walkGridCost="255">
-            <definedStates>
-              <l playAnimation="false" state="Standby">
-                <r0 aid="airvent1BExt" flx="false" />
-                <r90 aid="null" flx="false" />
-                <r180 aid="airvent1BExt" flx="false" />
-                <r270 aid="null" flx="false" />
-                <wallMountLight color="084720fe" powerUsage="0.1" skipCenter="false">
-                  <flood brightness="300" distance="3" />
-                </wallMountLight>
-              </l>
-              <l playAnimation="false" state="NoPowerOrError">
-                <r0 aid="airvent1BExt" flx="false" />
-                <r90 aid="null" flx="false" />
-                <r180 aid="airvent1BExt" flx="false" />
-                <r270 aid="null" flx="false" />
-              </l>
-            </definedStates>
-            <features addFacilityIcons="false" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
-              <stateWatchdog autoproduce="false" />
-              <vent on="true" voff="1">
-                <r0Closed aid="airvent1CFExt" />
-                <r90Closed aid="null" />
-                <additionaFullLitOpen atInuse="true" atNoPower="false" atStandby="true" mirX="0" mirY="0" x="0" y="0">
-                  <r0 aid="ventLight1" flx="true" />
-                  <r90 aid="null" flx="false" />
-                  <r180 aid="ventLight1B" flx="false" />
-                  <r270 aid="null" flx="false" />
-                </additionaFullLitOpen>
-                <additionalFullLitClosed atInuse="true" atNoPower="false" atStandby="true" mirX="0" mirY="0" x="0" y="0">
-                  <r0 aid="ventLight2" flx="true" />
-                  <r90 aid="null" flx="false" />
-                  <r180 aid="ventLight2B" flx="false" />
-                  <r270 aid="null" flx="false" />
-                </additionalFullLitClosed>
-              </vent>
-            </features>
-            <wallMount bothSides="false" type="Lower" />
-          </element>
-        </l>
-      </data>
-      <linked>
-      </linked>
-      <events />
-      <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="Normal">
-        <name tid="45110102" />
-        <desc tid="45110103" />
-        <guiIcon aid="airventExtIcon" />
-        <subCat id="1521" />
-        <restrictions>
-          <l gridX="0" gridY="-1" sizeX="1" sizeY="1" type="Floor" />
-          <l gridX="0" gridY="1" sizeX="1" sizeY="1" type="Space" />
-        </restrictions>
-        <difficultyLevel level="1" skill="Construction" />
-      </objectInfo>
-    </me>
-  </Element>
+    <Element>
+        <!-- Exterior Air Vent -->
+        <me _name="Exterior Air Vent" alternateY="false" costGroup="950" ec="1" mid="45110101" nonSymmetrical="false" offsetRot="R0">
+          <data>
+            <l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+              <element id="0" lightValue="None" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                <definedStates>
+                  <l playAnimation="false" state="Standby">
+                    <r0 aid="airvent1BExt" flx="false" />
+                    <r90 aid="null" flx="false" />
+                    <r180 aid="airvent1BExt" flx="false" />
+                    <r270 aid="null" flx="false" />
+                    <wallMountLight color="084720fe" powerUsage="0.1" skipCenter="false">
+                      <flood brightness="300" distance="3" />
+                    </wallMountLight>
+                  </l>
+                  <l playAnimation="false" state="NoPowerOrError">
+                    <r0 aid="airvent1BExt" flx="false" />
+                    <r90 aid="null" flx="false" />
+                    <r180 aid="airvent1BExt" flx="false" />
+                    <r270 aid="null" flx="false" />
+                  </l>
+                </definedStates>
+                <features addFacilityIcons="false" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+                  <stateWatchdog autoproduce="false" />
+                  <vent on="true" voff="1">
+                    <r0Closed aid="airvent1CFExt" />
+                    <r90Closed aid="null" />
+                    <additionaFullLitOpen atInuse="true" atNoPower="false" atStandby="true" mirX="0" mirY="0" x="0" y="0">
+                      <r0 aid="ventLight1" flx="true" />
+                      <r90 aid="null" flx="false" />
+                      <r180 aid="ventLight1B" flx="false" />
+                      <r270 aid="null" flx="false" />
+                    </additionaFullLitOpen>
+                    <additionalFullLitClosed atInuse="true" atNoPower="false" atStandby="true" mirX="0" mirY="0" x="0" y="0">
+                      <r0 aid="ventLight2" flx="true" />
+                      <r90 aid="null" flx="false" />
+                      <r180 aid="ventLight2B" flx="false" />
+                      <r270 aid="null" flx="false" />
+                    </additionalFullLitClosed>
+                  </vent>
+                </features>
+                <wallMount bothSides="false" type="Lower" />
+              </element>
+            </l>
+          </data>
+          <linked>
+          </linked>
+          <events />
+          <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="Normal">
+            <name tid="45110102" />
+            <desc tid="45110103" />
+            <guiIcon aid="airventExtIcon" />
+            <subCat id="1521" />
+            <restrictions>
+              <l gridX="0" gridY="-1" sizeX="1" sizeY="1" type="Floor" />
+              <l gridX="0" gridY="1" sizeX="1" sizeY="1" type="Space" />
+            </restrictions>
+            <difficultyLevel level="1" skill="Construction" />
+          </objectInfo>
+        </me>
+
+        <!-- Hazard Gas Generator -->
+        <me _name="Hazard Gas Generator" alternateY="false" costGroup="875" ec="4" mid="451101000" nonSymmetrical="false" offsetRot="R0">
+            <data>
+                <l eid="2" gridOffX="0" gridOffY="1" layer="0" type="Object">
+                    <element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="true" state="InUse">
+                                <r0 aid="co2Regulator1F" flx="false" />
+                                <r90 aid="null" flx="false" />
+                                <r180 aid="co2Regulator1B" flx="false" />
+                                <r270 aid="null" flx="false" />
+                            </l>
+                            <l playAnimation="false" state="Standby">
+                                <r0 aid="co2Regulator1F" flx="false" />
+                                <r90 aid="null" flx="false" />
+                                <r180 aid="co2Regulator1B" flx="false" />
+                                <r270 aid="null" flx="false" />
+                                <r0off x="0" y="0" />
+                                <r180off x="0" y="0" />
+                            </l>
+                        </definedStates>
+                        <indicator mirX="-19" mirY="49" x="15" y="34" />
+                        <additionaFullLit atInuse="true" atNoPower="false" atStandby="true" mirX="0" mirY="0" x="22" y="-11">
+                            <r0 aid="co2Regulator1Flights" flx="false" />
+                            <r90 aid="null" flx="false" />
+                            <r180 aid="null" flx="false" />
+                            <r270 aid="null" flx="false" />
+                        </additionaFullLit>
+                        <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+                            <produces>
+                                <l product="451101001" suction="false" usePowerPerSec="1.0" valuePerSec="50">
+                                    <heat heatTo="310" type="HeatTo" />
+                                </l>
+                            </produces>
+                            <stateWatchdog autoproduce="true" />
+                        </features>
+                        <boxHatch boxX="20" boxY="2" flipR90="false" in="true" out="true" x="20" y="2">
+                            <activate activateOffX="0" activateOffY="-1" />
+                            <r90Pos boxX="-20" boxY="2" x="-20" y="2" />
+                        </boxHatch>
+                        <commonPower />
+                    </element>
+                </l>
+            </data>
+            <linked>
+                <l eid="3" gridOffX="0" gridOffY="1" group="0" id="863" layer="0" rot="R0" />
+                <l eid="4" gridOffX="0" gridOffY="0" group="0" id="1093" layer="0" rot="R0" />
+            </linked>
+            <events />
+            <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="CO2">
+                <cu>
+                    <groups>
+                        <l buildTools="30" rep="875">
+                            <customPrice>
+                                <l elementId="162" howMuch="2" />
+                                <l elementId="173" howMuch="1" />
+                            </customPrice>
+                        </l>
+                    </groups>
+                </cu>
+                <name tid="451101002" />
+                <desc tid="451101003" />
+                <guiIcon aid="build_icon_1871" />
+                <subCat id="1508" />
+                <restrictions>
+                    <l gridX="0" gridY="0" sizeX="1" sizeY="1" type="Floor" />
+                </restrictions>
+                <difficultyLevel level="2" skill="Construction" />
+            </objectInfo>
+        </me>
+
+        <!-- Smoke Generator -->
+        <me _name="Smoke Generator" alternateY="false" costGroup="875" ec="4" mid="451101004" nonSymmetrical="false" offsetRot="R0">
+            <data>
+                <l eid="2" gridOffX="0" gridOffY="1" layer="0" type="Object">
+                    <element id="0" lightValue="High" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="true" state="InUse">
+                                <r0 aid="co2Regulator1F" flx="false" />
+                                <r90 aid="null" flx="false" />
+                                <r180 aid="co2Regulator1B" flx="false" />
+                                <r270 aid="null" flx="false" />
+                            </l>
+                            <l playAnimation="false" state="Standby">
+                                <r0 aid="co2Regulator1F" flx="false" />
+                                <r90 aid="null" flx="false" />
+                                <r180 aid="co2Regulator1B" flx="false" />
+                                <r270 aid="null" flx="false" />
+                                <r0off x="0" y="0" />
+                                <r180off x="0" y="0" />
+                            </l>
+                        </definedStates>
+                        <indicator mirX="-19" mirY="49" x="15" y="34" />
+                        <additionaFullLit atInuse="true" atNoPower="false" atStandby="true" mirX="0" mirY="0" x="22" y="-11">
+                            <r0 aid="co2Regulator1Flights" flx="false" />
+                            <r90 aid="null" flx="false" />
+                            <r180 aid="null" flx="false" />
+                            <r270 aid="null" flx="false" />
+                        </additionaFullLit>
+                        <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+                            <produces>
+                                <l product="451101007" suction="false" usePowerPerSec="1.0" valuePerSec="50">
+                                    <heat heatTo="310" type="HeatTo" />
+                                </l>
+                            </produces>
+                            <stateWatchdog autoproduce="true" />
+                        </features>
+                        <boxHatch boxX="20" boxY="2" flipR90="false" in="true" out="true" x="20" y="2">
+                            <activate activateOffX="0" activateOffY="-1" />
+                            <r90Pos boxX="-20" boxY="2" x="-20" y="2" />
+                        </boxHatch>
+                        <commonPower />
+                    </element>
+                </l>
+            </data>
+            <linked>
+                <l eid="3" gridOffX="0" gridOffY="1" group="0" id="863" layer="0" rot="R0" />
+                <l eid="4" gridOffX="0" gridOffY="0" group="0" id="1093" layer="0" rot="R0" />
+            </linked>
+            <events />
+            <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="CO2">
+                <cu>
+                    <groups>
+                        <l buildTools="30" rep="875">
+                            <customPrice>
+                                <l elementId="162" howMuch="2" />
+                                <l elementId="173" howMuch="1" />
+                            </customPrice>
+                        </l>
+                    </groups>
+                </cu>
+                <name tid="451101005" />
+                <desc tid="451101006" />
+                <guiIcon aid="build_icon_1871" />
+                <subCat id="1508" />
+                <restrictions>
+                    <l gridX="0" gridY="0" sizeX="1" sizeY="1" type="Floor" />
+                </restrictions>
+                <difficultyLevel level="2" skill="Construction" />
+            </objectInfo>
+        </me>
+    </Element>
+    <Product>
+        <product _name="Hyperium to Hazard Gas" eid="451101001" interactive="false" itemFabricator="false" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+            <needs>
+                <l _name="Hyperium" consumeEvery="200" element="172" howMuch="1" />
+            </needs>
+            <products>
+                <l _name="Hazard Gas" element="971" howMuch="10" produceEvery="1" />
+            </products>
+            <desc />
+        </product>
+        <product _name="Carbon to Smoke" eid="451101007" interactive="false" itemFabricator="false" itemScrapper="false" processValue="100" scrapper="false" smelter="false" startOnly="false" type="Process">
+            <needs>
+                <l _name="Carbon" consumeEvery="200" element="170" howMuch="1" />
+            </needs>
+            <products>
+                <l _name="Smoke" element="77" howMuch="25" produceEvery="1" />
+            </products>
+            <desc />
+        </product>
+    </Product>
 </data>
