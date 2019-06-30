@@ -13,9 +13,11 @@ readme = open('README.md', 'w')
 readme.write(textwrap.dedent("""\
     # Space Haven Mods
 
-    An unofficial collection of mods for Space Haven by Bugbyte. Requires the [unofficial mod loader](https://github.com/anatarist/spacehaven-modloader) to use.
+    This is a collection of unofficial mods tool for [Space Haven by Bugbyte](http://bugbyte.fi/spacehaven/), an early-alpha spaceship colony sim.
 
-    All of the mods are downloadable from [the releases page](https://github.com/anatarist/spacehaven-mods/releases).
+    It is **not associated with Bugbyte or Space Haven in any way** other than that it adds some mods to the game. These are intended to be a sneak peek at what modding might be able to do, and in the future will be updated to use official mod support.
+
+    All of the mods are downloadable from [the releases page](https://github.com/anatarist/spacehaven-mods/releases) and require [the unofficial mod loader](https://github.com/anatarist/spacehaven-modloader) to use.
 
 
 """))
