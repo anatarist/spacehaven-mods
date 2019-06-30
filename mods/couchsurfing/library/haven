@@ -5,7 +5,7 @@
 
             COUCHES & CHAIRS
 
-            Adjusts walkability and placement rules for couches and chairs and adds a few new
+            Adjusts walkability and placement rules for couches and chairs and adds new
             couch variants.
 
         -->
@@ -113,6 +113,7 @@
         </me>
 
         <!-- X1 Couch: components: adjust walkGridCost to 100 -->
+        <!--
         <me alternateY="false" costGroup="869" ec="4" mid="908" nonSymmetrical="false" offsetRot="R0">
             <data>
                 <l eid="2" gridOffX="0" gridOffY="0" layer="0" type="Object">
@@ -186,6 +187,7 @@
             <linked />
             <events />
         </me>
+        -->
 
         <!--
 
@@ -290,6 +292,116 @@
                 </restrictions>
                 <difficultyLevel level="1" skill="Construction" />
             </objectInfo>
+        </me>
+
+        <!-- Computer Terminal -->
+        <me _name="Computer Terminal" alternateY="false" costGroup="950" ec="1" mid="45110010" nonSymmetrical="false" offsetRot="R0">
+            <data />
+            <linked>
+                <!-- <l eid="1" gridOffX="1" gridOffY="0" group="0" id="69" layer="0" rot="R180" /> -->
+
+                <l eid="2" gridOffX="1" gridOffY="1" group="0" id="45110016" layer="0" rot="R0" />
+                <l eid="3" gridOffX="1" gridOffY="1" group="0" id="1548" layer="0" rot="R0" />
+
+                <l eid="4" gridOffX="0" gridOffY="1" group="0" id="258" layer="0" rot="R0" />
+                <l eid="5" gridOffX="2" gridOffY="1" group="0" id="258" layer="0" rot="R0" />
+            </linked>
+            <events />
+            <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="Normal">
+                <name tid="45110011" />
+                <desc tid="45110012" />
+                <guiIcon aid="terminalIcon" />
+                <subCat id="1506" />
+                <restrictions>
+                </restrictions>
+                <difficultyLevel level="1" skill="Construction" />
+            </objectInfo>
+        </me>
+
+        <me alternateY="false" costGroup="867" ec="2" mid="45110016" nonSymmetrical="false" offsetRot="R0">
+            <data>
+                <l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+                    <element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="true" state="Standby">
+                                <r0 aid="cockpitPart6F" flx="false" />
+                                <r90 aid="null" flx="false" />
+                                <r180 aid="cockpitPart6B" flx="false" />
+                                <r270 aid="null" flx="false" />
+                            </l>
+                            <l playAnimation="false" state="NoPowerOrError">
+                                <r0 aid="cockpitPart6F" flx="false" />
+                                <r90 aid="null" flx="false" />
+                                <r180 aid="cockpitPart6B" flx="false" />
+                                <r270 aid="null" flx="false" />
+                            </l>
+                        </definedStates>
+                        <additionaFullLit atInuse="true" atNoPower="false" atStandby="true" mirX="0" mirY="0" x="0" y="0">
+                            <r0 aid="con6F-light1" flx="false" />
+                            <r90 aid="null" flx="false" />
+                            <r180 aid="null" flx="false" />
+                            <r270 aid="null" flx="false" />
+                        </additionaFullLit>
+                        <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+                            <stateWatchdog autoproduce="false" />
+                        </features>
+                        <commonPower />
+                    </element>
+                </l>
+            </data>
+            <linked />
+            <events />
+        </me>
+
+
+        <!-- Captain's Chair -->
+        <me _name="Captain's Chair" alternateY="false" costGroup="950" ec="1" mid="45110013" nonSymmetrical="false" offsetRot="R0">
+            <data />
+            <linked>
+                <l eid="1" gridOffX="1" gridOffY="0" group="0" id="69" layer="0" rot="R180" />
+
+                <l eid="7" gridOffX="0" gridOffY="0" group="0" id="45110017" layer="0" rot="R270" />
+                <l eid="4" gridOffX="2" gridOffY="0" group="0" id="251" layer="0" rot="R90" />
+            </linked>
+            <events />
+            <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="Normal">
+                <name tid="45110014" />
+                <desc tid="45110015" />
+                <guiIcon aid="chairIcon" />
+                <subCat id="1506" />
+                <restrictions>
+                </restrictions>
+                <difficultyLevel level="1" skill="Construction" />
+            </objectInfo>
+        </me>
+
+        <me alternateY="false" costGroup="867" ec="2" mid="45110017" nonSymmetrical="false" offsetRot="R0">
+            <data>
+                <l eid="1" gridOffX="0" gridOffY="0" layer="0" type="Object">
+                    <element id="0" lightValue="Medium" renderOnFloor="false" userTogglable="false" walkGridCost="255">
+                        <definedStates>
+                            <l playAnimation="true" state="Standby">
+                                <r0 aid="cockpitPart7F" flx="false" />
+                                <r90 aid="cockpitPart4F" flx="true" />
+                                <r180 aid="cockpitPart4B" flx="false" />
+                                <r270 aid="cockpitPart7B" flx="true" />
+                            </l>
+                        </definedStates>
+                        <additionaFullLit atInuse="true" atNoPower="false" atStandby="true" mirX="0" mirY="0" x="0" y="0">
+                            <r0 aid="con7-light1" flx="false" />
+                            <r90 aid="con4-light1" flx="true" />
+                            <r180 aid="con7B-light1" flx="false" />
+                            <r270 aid="empty" flx="false" />
+                        </additionaFullLit>
+                        <features addFacilityIcons="true" inUseState="true" noPressureDmg="false" normalState="true" produceInNormal="false">
+                            <stateWatchdog autoproduce="false" />
+                        </features>
+                        <commonPower />
+                    </element>
+                </l>
+            </data>
+            <linked />
+            <events />
         </me>
 
     </Element>

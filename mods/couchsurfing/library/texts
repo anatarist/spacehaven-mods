@@ -11,4 +11,16 @@
     <holoDesc id="45110005" pid="145">
         <EN>An emblem of your ship and its crew. Costs a significant amount of energy to operate.</EN>
     </holoDesc>
+    <terminalName id="45110011" pid="145">
+        <EN>Terminal</EN>
+    </terminalName>
+    <terminalDesc id="45110012" pid="145">
+        <EN>A basic computer terminal.</EN>
+    </terminalDesc>
+    <terminalName id="45110014" pid="145">
+        <EN>Captain's Chair</EN>
+    </terminalName>
+    <terminalDesc id="45110015" pid="145">
+        <EN>"Engage!"</EN>
+    </terminalDesc>
 </t>
