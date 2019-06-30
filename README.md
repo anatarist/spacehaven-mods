@@ -9,6 +9,8 @@ All of these mods require [the unofficial mod loader](https://github.com/anatari
 
 ## Couchsurfing
 
+![couchsurfing](/mods/couchsurfing/preview.gif?raw=true)
+
 A comfort and decoration expansion.
 
 New decorative items:
@@ -29,6 +31,8 @@ Note: This mod is a drop-in replacement for the "Artificial Plant" example mod i
 
 ## Extreme Ventilation
 
+![extreme-ventilation](/mods/extreme-ventilation/preview.gif?raw=true)
+
 Expands on the game's gas simulation system.
 
 New Ventilation Components:
@@ -44,6 +48,8 @@ Note: This mod is a drop-in replacement for the "Exterior Air Vent" example mod 
 
 
 ## Greenhouse
+
+![greenhouse](/mods/greenhouse/preview.gif?raw=true)
 
 A rebalance of crop growth to take advantage of the game's temperature and gas systems.
 

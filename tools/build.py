@@ -30,8 +30,13 @@ for mod in mods:
     if info.find('wip') is not None:
         continue
 
+    if os.path.exists(os.path.join('mods', mod, 'preview.gif')):
+        preview = "![{mod}](/mods/{mod}/preview.gif?raw=true)".format(mod=mod)
+
     readme.write(textwrap.dedent("""\
         ## {name}
+
+        {preview}
 
         {description}
 
@@ -42,6 +47,7 @@ for mod in mods:
         name=info.find("name").text.strip(),
         description=info.find("description").text.strip(),
         mod=mod,
+        preview=preview,
         version=VERSION
     ))
 
