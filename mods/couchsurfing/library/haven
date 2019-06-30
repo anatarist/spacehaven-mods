@@ -269,6 +269,7 @@
                 </l>
             </data>
             <linked>
+                <l eid="4" gridOffX="0" gridOffY="0" group="0" id="907" layer="0" rot="R0" />
             </linked>
             <events />
             <objectInfo buildInstant="false" debugOnly="false" disableAirlockTest="false" disableBuildTest="false" disableRotation="false" viewMode="Normal">
